@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SignupController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rijalclaude</a> &gt; <a href="index.source.html" class="el_package">com.rijal.rijalclaude.controller</a> &gt; <span class="el_source">SignupController.java</span></div><h1>SignupController.java</h1><pre class="source lang-java linenums">package com.rijal.rijalclaude.controller;
+
+import com.rijal.rijalclaude.domain.UserAccount;
+import com.rijal.rijalclaude.service.LoginService;
+import com.rijal.rijalclaude.service.SignupService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+@Controller
+@RequestMapping(&quot;/api&quot;)
+<span class="nc" id="L23">public class SignupController {</span>
+    @Autowired
+    private LoginService loginService;
+
+    @Autowired
+    private SignupService signupService; // Service to handle user operations
+
+    // POST Request for Login
+    @PostMapping(&quot;/login&quot;)
+    public ResponseEntity&lt;?&gt; login(@RequestBody Map&lt;String, String&gt; requestData) {
+<span class="nc" id="L33">        String response = loginService.login(requestData.get(&quot;username&quot;), requestData.get(&quot;password&quot;));</span>
+<span class="nc" id="L34">        return ResponseEntity.ok(Collections.singletonMap(&quot;message&quot;,response));</span>
+    }
+
+    // POST Request for Signup
+    @PostMapping(&quot;/signup/cred&quot;)
+    public ResponseEntity&lt;?&gt; signup(@RequestBody UserAccount requestData, @AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
+<span class="nc bnc" id="L40" title="All 2 branches missed.">        if (authentication != null) {</span>
+<span class="nc" id="L41">            return ResponseEntity.status(HttpStatus.CONFLICT).body(Collections.singletonMap(&quot;error&quot;, &quot;User already authenticated&quot;));</span>
+        }
+<span class="nc" id="L43">        String response = signupService.signup(requestData);</span>
+<span class="nc" id="L44">        return ResponseEntity.ok(Collections.singletonMap(&quot;message&quot;, response));</span>
+    }
+
+    @GetMapping(&quot;/signup/google&quot;)
+    public ResponseEntity&lt;?&gt; signupWithGoogle(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
+<span class="nc" id="L49">        return handleSocialLogin(authentication);</span>
+    }
+
+    @GetMapping(&quot;/signup/facebook&quot;)
+    public ResponseEntity&lt;?&gt; signupWithFacebook(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
+<span class="nc" id="L54">        return handleSocialLogin(authentication);</span>
+    }
+
+    @GetMapping(&quot;/signup/amazon&quot;)
+    public ResponseEntity&lt;?&gt; signupWithAmazon(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
+<span class="nc" id="L59">        return handleSocialLogin(authentication);</span>
+    }
+    private ResponseEntity&lt;?&gt; handleSocialLogin(OAuth2AuthenticationToken authentication) {
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        if (authentication == null) {</span>
+<span class="nc" id="L63">            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Collections.singletonMap(&quot;error&quot;,&quot;User is not authenticated&quot;));</span>
+        }
+<span class="nc" id="L65">        String email = authentication.getPrincipal().getAttribute(&quot;email&quot;);</span>
+<span class="nc" id="L66">        String name = authentication.getPrincipal().getAttribute(&quot;name&quot;);</span>
+
+<span class="nc bnc" id="L68" title="All 2 branches missed.">        if (!signupService.userExists(email)) {</span>
+<span class="nc" id="L69">            signupService.createUser(email, name);</span>
+        }
+        // Create a response object (you can customize this as needed)
+<span class="nc" id="L72">        Map&lt;String, String&gt; response = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L73">        response.put(&quot;message&quot;, &quot;User logged in successfully&quot;);</span>
+<span class="nc" id="L74">        response.put(&quot;email&quot;, email);</span>
+<span class="nc" id="L75">        response.put(&quot;name&quot;, name);</span>
+
+<span class="nc" id="L77">        return ResponseEntity.ok(response); // Return a JSON response</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

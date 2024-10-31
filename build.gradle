@@ -1,0 +1,131 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.springframework.boot' version '3.3.4'
+    id 'io.spring.dependency-management' version '1.1.6'
+    id "pub.ihub.plugin.ihub-node" version "1.7.0"
+    id "jacoco"  // Jacoco plugin for coverage reports
+}
+
+// Configuration for Node.js and NPM
+node {
+    version = '20.18.0'  // Your required Node.js version
+    npmVersion = '10.9.0'  // Optional: if you need a specific NPM version
+    download = true  // Download and use locally
+    workDir = file("${project.buildDir}/nodejs")  // Where to download Node.js
+}
+
+group = 'com.rijal.rijalclaud'
+version = '1.0.0'
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.security:spring-security-config'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    // Payment integrations
+    implementation 'com.stripe:stripe-java:27.2.0-beta.3'
+    implementation 'com.paypal.sdk:rest-api-sdk:1.14.0'
+    // Alexa integration
+    implementation 'com.amazonaws:aws-java-sdk-alexaforbusiness:1.12.731'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+    implementation 'org.springframework.security:spring-security-oauth2-client'
+    implementation 'org.springframework.social:spring-social-facebook:2.0.3.RELEASE'
+    implementation 'org.springframework.social:spring-social-config:1.1.6.RELEASE'
+    // Test dependencies
+    testImplementation 'org.mockito:mockito-core:5.14.2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+jacoco {
+    toolVersion = "0.8.12"  // Jacoco version
+}
+
+// Node.js tasks for Angular
+task npmInstall1(type: NpmTask) {
+    args = ['install']
+    workingDir = file("${projectDir}/client/rijalclaude")  // Ensure you run npm from the correct directory
+}
+
+task useAngular(type: NpmTask) {
+    dependsOn npmInstall1
+    args = ['audit', 'fix']
+    workingDir = file("${projectDir}/client/rijalclaude")
+}
+
+task nvmUseAndBuildAngular(type: Exec) {
+    workingDir "$projectDir/client/rijalclaude" // Ensure we are in the correct directory
+    commandLine 'bash', '-c', 'source ~/.nvm/nvm.sh && nvm use 20 && ng build --configuration production --output-path=dist/rijal-claude/browser --base-href=/ --deploy-url=/'
+}
+
+task buildAngular1(dependsOn: 'nvmUseAndBuildAngular') {
+    group = "build"
+    description = "Build the Angular project using npm with Node.js v20"
+}
+
+// Task to delete existing static files
+task deleteStatic(type: Delete) {
+    delete fileTree(dir: 'src/main/resources/static')
+}
+
+// Task to copy Angular dist files to static folder
+task copyAngularDistToStatic(type: Copy) {
+    dependsOn buildAngular1
+    from 'client/rijalclaude/dist/rijal-claude/browser'  // Adjust if your dist folder path is different
+    into 'src/main/resources/static'
+    doLast {
+        println "Angular dist files copied to src/main/resources/static."
+    }
+}
+
+// Ensure static files are deleted before copying new files
+copyAngularDistToStatic.dependsOn deleteStatic
+
+tasks.processResources.dependsOn copyAngularDistToStatic
+
+// Conditionally copy dist folder based on the flag
+bootWar {
+    if (project.hasProperty("angularBuild") && project.angularBuild == "true") {
+        dependsOn copyAngularDistToStatic
+    }
+}
+
+tasks.build.dependsOn copyAngularDistToStatic
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport  // Run Jacoco after tests
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required.set(true)
+        html.outputLocation.set(file("$buildDir/reports/jacoco/test/html"))  // Unit test report
+    }
+}
+
+task jacocoIntegrationTestReport(type: JacocoReport) {
+    dependsOn test
+    executionData(fileTree(dir: "$buildDir/jacoco", include: "**/*.exec"))
+    sourceDirectories.setFrom(files('src/main/java'))
+    classDirectories.setFrom(files('build/classes/java/main'))
+
+    reports {
+        xml.required.set(true)
+        html.outputLocation.set(file("$buildDir/reports/jacoco/intTest/html"))  // Integration test report
+    }
+}

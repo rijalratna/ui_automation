@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-alexaforbusiness:1.12.731" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.amazonaws" artifactId="aws-java-sdk-alexaforbusiness" version="1.12.731" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-alexaforbusiness/1.12.731/4133738526948a5933acbb8135a1fe0c0ce62f5c/aws-java-sdk-alexaforbusiness-1.12.731.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-alexaforbusiness/1.12.731/cb32c2ee27d6e859b15867eddb0b041ea720bf40/aws-java-sdk-alexaforbusiness-1.12.731-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

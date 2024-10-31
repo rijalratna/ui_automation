@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PaymentService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rijalclaude</a> &gt; <a href="index.source.html" class="el_package">com.rijal.rijalclaude.service</a> &gt; <span class="el_source">PaymentService.java</span></div><h1>PaymentService.java</h1><pre class="source lang-java linenums">package com.rijal.rijalclaude.service;
+import com.rijal.rijalclaude.domain.CardPaymentRequest;
+import com.stripe.Stripe;
+import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentIntent;
+import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+@Service
+public class PaymentService {
+
+<span class="nc" id="L15">    public PaymentService() {</span>
+<span class="nc" id="L16">        Stripe.apiKey = &quot;your-stripe-secret-key&quot;;</span>
+<span class="nc" id="L17">    }</span>
+
+    public PaymentIntent createCardPayment(CardPaymentRequest request) throws StripeException {
+<span class="nc" id="L20">        Map&lt;String, Object&gt; params = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L21">        params.put(&quot;amount&quot;, (int) (request.getAmount() * 100)); // Convert to cents</span>
+<span class="nc" id="L22">        params.put(&quot;currency&quot;, &quot;usd&quot;);</span>
+<span class="nc" id="L23">        params.put(&quot;payment_method_types&quot;, List.of(&quot;card&quot;));</span>
+
+<span class="nc" id="L25">        return PaymentIntent.create(params);</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

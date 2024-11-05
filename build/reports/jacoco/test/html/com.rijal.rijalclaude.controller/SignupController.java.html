@@ -3,6 +3,7 @@
 import com.rijal.rijalclaude.domain.UserAccount;
 import com.rijal.rijalclaude.service.LoginService;
 import com.rijal.rijalclaude.service.SignupService;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +21,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping(&quot;/api&quot;)
-<span class="nc" id="L23">public class SignupController {</span>
+<span class="nc" id="L24">public class SignupController {</span>
     @Autowired
     private LoginService loginService;
 
@@ -30,51 +31,78 @@ import java.util.Map;
     // POST Request for Login
     @PostMapping(&quot;/login&quot;)
     public ResponseEntity&lt;?&gt; login(@RequestBody Map&lt;String, String&gt; requestData) {
-<span class="nc" id="L33">        String response = loginService.login(requestData.get(&quot;username&quot;), requestData.get(&quot;password&quot;));</span>
-<span class="nc" id="L34">        return ResponseEntity.ok(Collections.singletonMap(&quot;message&quot;,response));</span>
+        // Extract username and password from the request
+<span class="nc" id="L35">        String username = requestData.get(&quot;username&quot;);</span>
+<span class="nc" id="L36">        String password = requestData.get(&quot;password&quot;);</span>
+
+        // Attempt to authenticate the user
+<span class="nc" id="L39">        UserAccount user = loginService.login(username, password);</span>
+
+        // Check if the user is authenticated
+<span class="nc bnc" id="L42" title="All 2 branches missed.">        if (user != null) {</span>
+            // Create a response object containing user details and a success message
+<span class="nc" id="L44">            Map&lt;String, Object&gt; response = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L45">            response.put(&quot;message&quot;, &quot;Login Success !!&quot;);</span>
+<span class="nc" id="L46">            response.put(&quot;email&quot;, user.getEmail());</span>
+<span class="nc" id="L47">            response.put(&quot;name&quot;, user.getName());</span>
+
+<span class="nc" id="L49">            return ResponseEntity.ok(response); // Return user data along with the message</span>
+        } else {
+<span class="nc" id="L51">            return ResponseEntity.badRequest().body(Collections.singletonMap(&quot;error&quot;, &quot;Login failed !&quot;));</span>
+        }
     }
+
 
     // POST Request for Signup
     @PostMapping(&quot;/signup/cred&quot;)
     public ResponseEntity&lt;?&gt; signup(@RequestBody UserAccount requestData, @AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
-<span class="nc bnc" id="L40" title="All 2 branches missed.">        if (authentication != null) {</span>
-<span class="nc" id="L41">            return ResponseEntity.status(HttpStatus.CONFLICT).body(Collections.singletonMap(&quot;error&quot;, &quot;User already authenticated&quot;));</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">        if (authentication != null) {</span>
+<span class="nc" id="L60">            return ResponseEntity.status(HttpStatus.CONFLICT).body(Collections.singletonMap(&quot;error&quot;, &quot;User already authenticated&quot;));</span>
         }
-<span class="nc" id="L43">        String response = signupService.signup(requestData);</span>
-<span class="nc" id="L44">        return ResponseEntity.ok(Collections.singletonMap(&quot;message&quot;, response));</span>
+<span class="nc" id="L62">        String response = signupService.signup(requestData);</span>
+<span class="nc" id="L63">        return ResponseEntity.ok(Collections.singletonMap(&quot;message&quot;, response));</span>
     }
 
-    @GetMapping(&quot;/signup/google&quot;)
+    @PostMapping(&quot;/signup/google&quot;)
     public ResponseEntity&lt;?&gt; signupWithGoogle(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
-<span class="nc" id="L49">        return handleSocialLogin(authentication);</span>
+<span class="nc" id="L68">        return handleSocialLogin(authentication);</span>
+    }
+    @GetMapping(&quot;/login/oauth2/code/google&quot;)
+    public ResponseEntity&lt;?&gt; oauth2Callback(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
+<span class="nc" id="L72">        return handleSocialLogin(authentication);</span>
     }
 
-    @GetMapping(&quot;/signup/facebook&quot;)
+    @PostMapping(&quot;/signup/facebook&quot;)
     public ResponseEntity&lt;?&gt; signupWithFacebook(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
-<span class="nc" id="L54">        return handleSocialLogin(authentication);</span>
+<span class="nc" id="L77">        return handleSocialLogin(authentication);</span>
     }
 
-    @GetMapping(&quot;/signup/amazon&quot;)
+    @PostMapping(&quot;/signup/amazon&quot;)
     public ResponseEntity&lt;?&gt; signupWithAmazon(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
-<span class="nc" id="L59">        return handleSocialLogin(authentication);</span>
+<span class="nc" id="L82">        return handleSocialLogin(authentication);</span>
+    }
+    @GetMapping(&quot;/user/info&quot;)
+    public ResponseEntity&lt;?&gt; getUserInfo(HttpSession session) {
+<span class="nc" id="L86">        Map&lt;String, String&gt; userInfo = (Map&lt;String, String&gt;) session.getAttribute(&quot;user&quot;);</span>
+<span class="nc" id="L87">        return ResponseEntity.ok(userInfo);</span>
     }
     private ResponseEntity&lt;?&gt; handleSocialLogin(OAuth2AuthenticationToken authentication) {
-<span class="nc bnc" id="L62" title="All 2 branches missed.">        if (authentication == null) {</span>
-<span class="nc" id="L63">            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Collections.singletonMap(&quot;error&quot;,&quot;User is not authenticated&quot;));</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">        if (authentication == null) {</span>
+<span class="nc" id="L91">            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Collections.singletonMap(&quot;error&quot;,&quot;User is not authenticated&quot;));</span>
         }
-<span class="nc" id="L65">        String email = authentication.getPrincipal().getAttribute(&quot;email&quot;);</span>
-<span class="nc" id="L66">        String name = authentication.getPrincipal().getAttribute(&quot;name&quot;);</span>
+<span class="nc" id="L93">        String email = authentication.getPrincipal().getAttribute(&quot;email&quot;);</span>
+<span class="nc" id="L94">        String name = authentication.getPrincipal().getAttribute(&quot;name&quot;);</span>
 
-<span class="nc bnc" id="L68" title="All 2 branches missed.">        if (!signupService.userExists(email)) {</span>
-<span class="nc" id="L69">            signupService.createUser(email, name);</span>
+<span class="nc bnc" id="L96" title="All 2 branches missed.">        if (!signupService.userExists(email)) {</span>
+<span class="nc" id="L97">            signupService.createUser(email, name);</span>
         }
         // Create a response object (you can customize this as needed)
-<span class="nc" id="L72">        Map&lt;String, String&gt; response = new HashMap&lt;&gt;();</span>
-<span class="nc" id="L73">        response.put(&quot;message&quot;, &quot;User logged in successfully&quot;);</span>
-<span class="nc" id="L74">        response.put(&quot;email&quot;, email);</span>
-<span class="nc" id="L75">        response.put(&quot;name&quot;, name);</span>
+<span class="nc" id="L100">        Map&lt;String, String&gt; response = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L101">        response.put(&quot;message&quot;, &quot;User logged in successfully&quot;);</span>
+<span class="nc" id="L102">        response.put(&quot;email&quot;, email);</span>
+<span class="nc" id="L103">        response.put(&quot;name&quot;, name);</span>
 
-<span class="nc" id="L77">        return ResponseEntity.ok(response); // Return a JSON response</span>
+<span class="nc" id="L105">        return ResponseEntity.ok(response); // Return a JSON response</span>
     }
 }
 

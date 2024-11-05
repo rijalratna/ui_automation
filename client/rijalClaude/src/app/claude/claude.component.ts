@@ -22,8 +22,11 @@ export class ClaudeComponent implements OnInit {
 
   ngOnInit(): void {
     this.username = this.sessionService.getUsername(); // Get username from session
-    if (this.username) {
+    this.isLoggedIn = this.sessionService.isAuthenticated(); // Check if the user is authenticated
+    if (this.isLoggedIn) {
       this.loadFiles(this.desiredFolder); // Load files when component initializes
+    }else{
+      console.warn('User is not logged in. Redirecting to signup.');
     }
   }
 

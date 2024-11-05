@@ -35,21 +35,29 @@ export class ApiService {
       }),
     });
   }
-  loginWithGoogle(): Observable<any> {
-    const url = `${this.baseUrl}/signup/google`; // Ensure this URL matches the backend mapping
-    return this.http.get(url);
-  }
+  // loginWithGoogle(): Observable<any> {
+  //   const url = `${this.baseUrl}/signup/google`; // Ensure this URL matches the backend mapping
+  //   return this.http.post(url, {});
+  // }
+  loginWithGoogle() {
+    const url = `${this.baseUrl}/oauth2/authorization/google`; // This should match your backend OAuth2 login mapping
+    window.location.href = url; // Redirect to the Google login page
+}
 
   loginWithFacebook(): Observable<any> {
     const url = `${this.baseUrl}/signup/facebook`;
-    return this.http.get(url);
+    return this.http.post(url, {});
   }
 
   loginWithAmazon(): Observable<any> {
     const url = `${this.baseUrl}/signup/amazon`;
-    return this.http.get(url);
+    return this.http.post(url, {});
   }
 
+  getUserInfo(): Observable<any> {
+    const url = `${this.baseUrl}/user/info`; // Endpoint to fetch user info from session
+    return this.http.get(url);
+}
   // Function to handle file uploads for NAS
   submitForm(endpoint: string, formData: FormData): Observable<any> {
     const url = `${this.baseUrl}/${endpoint}`;

@@ -18,18 +18,26 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize
                         // Allow access to login, signup, and oauth2 endpoints
-                        .requestMatchers("/api/login", "/api/signup", "/oauth2/**", "/**").permitAll() // Include other public paths
+                        .requestMatchers("/api/login", "/api/signup", "/api/signup/**", "/oauth2/**").permitAll() // Include other public paths
                         .anyRequest().authenticated() // Require authentication for all other requests
                 )
-                .oauth2Login(oauth2 -> oauth2
-                        .loginPage("/#/login") // Ensure your Angular routing is respected
+                .formLogin(form -> form
+//                        .loginPage("/#/login") // Your custom Angular route for login
                         .defaultSuccessUrl("/#/home", true) // Redirect to home after successful login
-                        .failureUrl("/#/signup?error=true") // Redirect on failure
+                        .failureUrl("/#/signup?error=true") // Redirect to login with error
+                )
+                .oauth2Login(oauth2 -> oauth2
+//                        .loginPage("/login") // Ensure this matches your Angular routing
+                        .defaultSuccessUrl("/home", true) // Redirect to home after successful login
+                        .failureUrl("/signup?error=true") // Redirect on failure
+                        .authorizationEndpoint(authorization -> authorization
+                                .baseUri("/oauth2/authorization") // Set base URI for OAuth2 authorization
+                        )
                         .permitAll()
                 )
                 .logout(logout -> logout
                         .logoutUrl("/logout")
-                        .logoutSuccessUrl("/#/login") // Redirect to Angular login page after logout
+                        .logoutSuccessUrl("/login") // Redirect to Angular login page after logout
                         .permitAll()
                 );
         return http.build();

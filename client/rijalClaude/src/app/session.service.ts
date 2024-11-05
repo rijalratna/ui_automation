@@ -1,55 +1,28 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root' // Making it a singleton service
+    providedIn: 'root',
 })
 export class SessionService {
-
-  constructor() {}
-
-  private isSessionStorageAvailable(): boolean {
-    return typeof sessionStorage !== 'undefined';
-  }
-  isAuthenticated(): boolean {
-    return this.getUsername() !== null; // Check if username exists in session storage
-}
-
-setUsername(username: string): void {
-  if (this.isSessionStorageAvailable()) {
-      sessionStorage.setItem('username', username);
-      console.log(`Username set: ${username}`);
-  } else {
-      console.warn('SessionStorage is not available.');
-  }
-}
-
-getUsername(): string | null {
-  if (this.isSessionStorageAvailable()) {
-      const username = sessionStorage.getItem('username');
-      console.log(`Username retrieved: ${username}`);
-      return username;
-  } else {
-      console.warn('SessionStorage is not available.');
-      return null;
-  }
-}
-
-
-  clearSession(): void {
-    sessionStorage.removeItem('username');
-    sessionStorage.removeItem('user'); // Clear user data as well
-  }
-  setUser(user: any): void {
-    if (this.isSessionStorageAvailable()) {
-        sessionStorage.setItem('user', JSON.stringify(user)); // Store user as JSON
+    private USER_KEY = 'currentUser';
+    setUser(user: any): void {
+        sessionStorage.setItem(this.USER_KEY, JSON.stringify(user)); // Store user in session storage
     }
-}
 
-getUser(): any | null {
-    if (this.isSessionStorageAvailable()) {
-        const userJson = sessionStorage.getItem('user');
-        return userJson ? JSON.parse(userJson) : null; // Parse JSON to object
+    getUser(): any {
+        return JSON.parse(sessionStorage.getItem(this.USER_KEY) || 'null'); // Retrieve user
     }
-    return null;
-}
+
+    getUsername(): string | null {
+        const user = this.getUser();
+        return user ? user.name : null; // Return username or null
+    }
+
+    isAuthenticated(): boolean {
+        return this.getUser() !== null; // Check if user exists in session storage
+    }
+
+    clearSession(): void {
+        sessionStorage.removeItem(this.USER_KEY); // Clear user from session storage
+    }
 }

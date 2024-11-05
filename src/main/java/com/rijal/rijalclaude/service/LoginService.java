@@ -10,11 +10,11 @@ public class LoginService {
     @Autowired
     private LoginRepository loginRepository;
 
-    public String login(String username, String password) {
+    public UserAccount login(String username, String password) {
         UserAccount user = loginRepository.findByUsername(username);
         if (user != null && user.getPassword().equals(password)) {
-            return "Login successful!";
+            return user;
         }
-        return "Invalid credentials!";
+        return user;
     }
 }

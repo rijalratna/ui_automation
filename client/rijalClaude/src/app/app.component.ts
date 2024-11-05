@@ -1,7 +1,6 @@
 // app.component.ts
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ApiService } from './app-service.service';
 import { SessionService } from './session.service';
 
@@ -11,7 +10,7 @@ import { SessionService } from './session.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = "rijalClaude";
+  title = 'rijalClaude';
   username: string = '';
   password: string = '';
   isLoggedIn: boolean = false;
@@ -23,10 +22,12 @@ export class AppComponent {
   }
 
   private loadUserFromSession() {
-    const userData = this.sessionService.getUsername();
+    const userData = this.sessionService.getUser();
     if (userData) {
-      this.currentUser = JSON.parse(userData);
+      this.currentUser = userData;
       this.isLoggedIn = true;
+    }else{
+      console.warn("user in not loged in priviously.")
     }
   }
 
@@ -37,9 +38,7 @@ export class AppComponent {
     this.appService.login(formData).subscribe({
       next: (response) => {
         console.log('Login successful:', response);
-        this.sessionService.setUser(response);
-        this.router.navigate(['/home']);
-        this.loadUserFromSession(); // Reload user data after login
+        this.handleLoginResponse(response);
       },
       error: (error) => {
         console.error('Login failed:', error);
@@ -53,16 +52,17 @@ export class AppComponent {
 
   logout() {
     this.sessionService.clearSession();
-    this.isLoggedIn = false; // Update login state
-    this.currentUser = null; // Clear current user data
+    this.isLoggedIn = false;
+    this.currentUser = null;
     this.router.navigate(['/signup']);
   }
 
   loginWithGoogle() {
-    this.appService.loginWithGoogle().subscribe({
-      next: (response) => this.handleLoginResponse(response),
-      error: (error) => console.error('Google login failed:', error),
-    });
+    this.appService.loginWithGoogle();
+    // .subscribe({
+    //   next: (response) => this.handleLoginResponse(response),
+    //   error: (error) => console.error('Google login failed:', error),
+    // });
   }
 
   loginWithFacebook() {
@@ -83,7 +83,7 @@ export class AppComponent {
     console.log('Logged in:', response.message);
     this.isLoggedIn = true;
     this.currentUser = { email: response.email, name: response.name };
-    this.sessionService.setUsername(JSON.stringify(this.currentUser));
-    this.router.navigate(['/home']); // Navigate after social login
+    this.sessionService.setUser(this.currentUser);
+    this.router.navigate(['/home']); // Navigate after successful login
   }
 }

@@ -18,10 +18,12 @@ import { HomeSecurityComponent } from './feature/home-security/home-security.com
 import { TravelPlannerComponent } from './feature/travel-planner/travel-planner.component';
 import { NicheCommunityComponent } from './feature/niche-community/niche-community.component';
 import { AuthGuard } from './guards/auth.guard';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
   { path: 'signup', component: SignupComponent }, // Signup page
+  { path: 'login', component: LoginComponent }, // Signup page
   { path: 'home', component: HomeComponent }, // Home page
   { path: 'claude', component: ClaudeComponent , canActivate: [AuthGuard] }, // Claude page
   { path: 'automation', component: AutomationComponent, canActivate: [AuthGuard] }, // Protected route

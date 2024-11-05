@@ -27,6 +27,7 @@ import { AppRoutingModule } from './app.routing';
 import { ApiService } from './app-service.service';
 import { SessionService } from './session.service';
 import { PaybillComponent } from './paybill/paybill.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PaybillComponent } from './paybill/paybill.component';
     FileManagementComponent,
     HomeSecurityComponent,
     TravelPlannerComponent,
-    NicheCommunityComponent
+    NicheCommunityComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

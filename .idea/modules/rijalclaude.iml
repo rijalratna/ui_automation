@@ -6,6 +6,20 @@
       <excludeFolder url="file://$MODULE_DIR$/../../.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../build" />
       <excludeFolder url="file://$MODULE_DIR$/../../out" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude/.angular/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude/.history/src" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/.angular" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/.angular/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/.history" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/.history/src" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/.vscode" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalClaude1/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalclaude2/.angular/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalclaude2/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/../../client/rijalclaude2/node_modules" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

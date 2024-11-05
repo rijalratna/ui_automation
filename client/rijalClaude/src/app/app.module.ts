@@ -26,6 +26,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { AppRoutingModule } from './app.routing';
 import { ApiService } from './app-service.service';
 import { SessionService } from './session.service';
+import { PaybillComponent } from './paybill/paybill.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { SessionService } from './session.service';
     AutomationComponent,
     AboutComponent,
     FeatureComponent,
+    PaybillComponent,
     PersonalFinanceManagerComponent,
     TaskManagerComponent,
     HealthFitnessTrackerComponent,

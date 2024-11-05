@@ -4,105 +4,330 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="675bce31-8882-49fa-9bf4-38b035a20b37" name="Changes" comment="initial commit">
+    <list default="true" id="675bce31-8882-49fa-9bf4-38b035a20b37" name="Changes" comment="second round">
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/file-management/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/health-fitness-tracker/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/home-security/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/niche-community/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/personal-finance-manager/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/smart-home-management/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/social-engagement/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/task-manager/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/feature/travel-planner/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/home/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/main-MVLQSMRT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/bootstrap-icons-OCU552PF.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/bootstrap-icons-X6UQXWUS.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-brands-400-CNBICIQT.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-brands-400-MDS4TU4L.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-regular-400-2FI4ICQD.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-regular-400-N56QV3DR.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-solid-900-XVWCCN5V.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-solid-900-Z3HFQTXF.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-v4compatibility-4Q6RMATN.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/media/fa-v4compatibility-TNIB7AHA.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/static/signup/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101201918.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101202009.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101202013.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101202014.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101202024.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101202026.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101202027.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101204156.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/angular_20241101204208.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/package_20241101201949.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/package_20241101204630.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101201918.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101201918.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101203618.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101203624.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101203640.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101204045.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101204556.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101204850.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101205007.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101205539.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101205647.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101205900.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.component_20241101210050.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101201918.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101202514.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101202556.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101202929.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101203133.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101203147.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101203148.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101203220.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101203456.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101210221.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101210307.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.config_20241101210412.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101202854.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101202857.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101203039.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101204002.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101204513.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101205050.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101205229.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101205409.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.module_20241101210359.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101201918.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202206.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202300.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202302.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202306.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202308.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202403.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202404.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202444.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202629.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202632.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202707.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202709.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202710.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101202807.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101203922.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101203942.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/app.routes_20241101204421.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/auth.guard_20241101202116.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/auth.guard_20241101202700.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/auth.service_20241101202126.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/auth.service_20241101202335.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/home/home.component_20241101203349.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/home/home.component_20241101203349.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/home/home.component_20241101203657.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/home/home.component_20241101203817.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/login/login.component_20241101202028.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/login/login.component_20241101203823.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101202028.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101202028.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101202145.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101203827.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101204246.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101204312.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101204751.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101204804.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101204805.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/navbar/navbar.component_20241101205158.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/restricted/restricted.component_20241101202029.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/restricted/restricted.component_20241101203833.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/signup/signup.component_20241101202029.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/signup/signup.component_20241101202029.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/signup/signup.component_20241101203837.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.history/rijalclaude/src/app/signup/signup.component_20241101204015.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.module.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/FileResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/about/about.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/about/about.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/about/about.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/about/about.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app-service.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app-service.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.config.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/app.routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/automation/automation.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/automation/automation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/automation/automation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/automation/automation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/claude/claude.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/claude/claude.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/claude/claude.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/claude/claude.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/e-learning/e-learning.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/e-learning/e-learning.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/e-learning/e-learning.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/e-learning/e-learning.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/feature.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/feature.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/feature.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/feature.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/file-management/file-management.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/file-management/file-management.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/file-management/file-management.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/file-management/file-management.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/health-fitness-tracker/health-fitness-tracker.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/health-fitness-tracker/health-fitness-tracker.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/health-fitness-tracker/health-fitness-tracker.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/health-fitness-tracker/health-fitness-tracker.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/home-security/home-security.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/home-security/home-security.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/home-security/home-security.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/home-security/home-security.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/niche-community/niche-community.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/niche-community/niche-community.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/niche-community/niche-community.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/niche-community/niche-community.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/personal-finance-manager/personal-finance-manager.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/personal-finance-manager/personal-finance-manager.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/personal-finance-manager/personal-finance-manager.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/personal-finance-manager/personal-finance-manager.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/smart-home-management/smart-home-management.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/smart-home-management/smart-home-management.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/smart-home-management/smart-home-management.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/smart-home-management/smart-home-management.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/social-engagement/social-engagement.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/social-engagement/social-engagement.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/social-engagement/social-engagement.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/social-engagement/social-engagement.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/task-manager/task-manager.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/task-manager/task-manager.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/task-manager/task-manager.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/task-manager/task-manager.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/travel-planner/travel-planner.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/travel-planner/travel-planner.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/travel-planner/travel-planner.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/feature/travel-planner/travel-planner.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/paybill/paybill.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/paybill/paybill.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/paybill/paybill.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/paybill/paybill.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/session.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/session.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/signup/signup.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/signup/signup.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/signup/signup.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/app/signup/signup.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/main.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalClaude1/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.config.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/auth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/navbar/navbar.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/navbar/navbar.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/navbar/navbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/restricted/restricted.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/restricted/restricted.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/restricted/restricted.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/restricted/restricted.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/signup/signup.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/signup/signup.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/signup/signup.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/app/signup/signup.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/main.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/rijalclaude2/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/automation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/claude/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/e-learning/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/file-management/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/health-fitness-tracker/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/home-security/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/niche-community/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/personal-finance-manager/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/smart-home-management/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/social-engagement/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/task-manager/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/feature/travel-planner/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.csr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/main-MVLQSMRT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/bootstrap-icons-OCU552PF.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/bootstrap-icons-X6UQXWUS.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-brands-400-CNBICIQT.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-brands-400-MDS4TU4L.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-regular-400-2FI4ICQD.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-regular-400-N56QV3DR.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-solid-900-XVWCCN5V.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-solid-900-Z3HFQTXF.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-v4compatibility-4Q6RMATN.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/fa-v4compatibility-TNIB7AHA.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/polyfills-FFHMD2TL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts-EEEIPNC3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/signup/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles-4B4YV6EX.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/expanded/expanded.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/expanded/expanded.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/rijal/rijalclaude/RijalclaudeApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0-plain.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/CorsConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/CorsConfig.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/GlobalExceptionHandler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/GlobalExceptionHandler.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/SecurityConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/SecurityConfig.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AlexaController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AlexaController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AppController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AppController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/FileController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/FileController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/SignupController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/SignupController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/BankPaymentRequest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/BankPaymentRequest.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/CardPaymentRequest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/CardPaymentRequest.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/ControlRequest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/ControlRequest.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/FileResponse.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/FileResponse.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/HomeAutomation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/HomeAutomation.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/UserAccount.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/UserAccount.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.domain/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/AlexaService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/AlexaService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/CustomUserDetailsService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/CustomUserDetailsService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/LoginService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/LoginService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/NasService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/NasService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/PayPalService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/PayPalService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/PaymentService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/PaymentService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/SignupService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/SignupService.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude/RijalclaudeApplication.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude/RijalclaudeApplication.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude/ServletInitializer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude/ServletInitializer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/branchfc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/branchnc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/branchpc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/bundle.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/class.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/greenbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/group.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/method.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/package.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/redbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/report.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/report.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/session.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/sort.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/source.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-resources/up.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resolvedMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/config/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/config/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/controller/AngularController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/controller/AngularController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0-plain.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0-plain.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/GlobalExceptionHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/GlobalExceptionHandler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/GlobalExceptionHandler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/GlobalExceptionHandler.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/3rdpartylicenses.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/browser/about/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/browser/automation/index.html" beforeDir="false" />
@@ -136,19 +361,80 @@
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/server/polyfills.server.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/server/render-utils.server.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/server/server.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/jacocoagent.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/org/jacoco/agent/AgentJar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_ff7bf8f04f99dc306508d1c81e47a68b/org/jacoco/agent/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/about/about.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.config.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.config.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/automation/automation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/automation/automation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/claude/claude.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/claude/claude.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/e-learning/e-learning.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/e-learning/e-learning.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/feature.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/feature.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/file-management/file-management.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/file-management/file-management.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/health-fitness-tracker/health-fitness-tracker.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/health-fitness-tracker/health-fitness-tracker.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/home-security/home-security.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/home-security/home-security.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/niche-community/niche-community.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/niche-community/niche-community.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/personal-finance-manager/personal-finance-manager.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/personal-finance-manager/personal-finance-manager.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/smart-home-management/smart-home-management.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/smart-home-management/smart-home-management.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/social-engagement/social-engagement.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/social-engagement/social-engagement.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/task-manager/task-manager.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/task-manager/task-manager.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/travel-planner/travel-planner.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/feature/travel-planner/travel-planner.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/signup/signup.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/main.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/main.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/controller/AngularController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/controller/AngularController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/automation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/automation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/claude/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/claude/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/feature/e-learning/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/e-learning/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/file-management/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/health-fitness-tracker/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/home-security/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/niche-community/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/personal-finance-manager/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/smart-home-management/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/social-engagement/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/task-manager/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/feature/travel-planner/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/home/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.csr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/main-CQGBTFQK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/polyfills-FFHMD2TL.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/polyfills-FFHMD2TL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/scripts-EEEIPNC3.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/scripts-EEEIPNC3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/signup/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/browser/styles-DZ6UBGXD.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/styles-4B4YV6EX.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/prerendered-routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/chunk-LSJ5RA3C.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/chunk-QZP2S7SI.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/chunk-VPNH2P2X.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/chunk-VVCT4QZE.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/index.server.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude1/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/main.server.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/polyfills.server.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/render-utils.server.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/server/server.mjs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +471,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -302,14 +591,6 @@
       </RunnerSettings>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Remote">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="functionName" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Gradle.rijalclaude [clean build bootrun]" />
       <item itemvalue="Gradle.rijalclaude [checkNpmVersion]" />
@@ -340,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730338684324</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1730339875494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730339875494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -356,6 +645,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="second round" />
+    <option name="LAST_COMMIT_MESSAGE" value="second round" />
   </component>
 </project>

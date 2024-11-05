@@ -1,0 +1,88 @@
+<!-- <div>
+  <h2>Upload Files</h2>
+  <div class="card mt-4 p-3">
+    <form (submit)="onUpload()" enctype="multipart/form-data" class="d-flex align-items-center gap-2">
+      <div>
+        <label for="file" class="form-label mb-0">Files:</label>
+        <input id="file" name="file" type="file" class="form-control form-control-sm d-inline-block" (change)="onFileChange($event)" multiple style="width: 500px;" />
+      </div>
+      <div>
+        <label for="folder" class="form-label mb-0">Folder:</label>
+        <input id="folder" name="folder" type="text" class="form-control form-control-sm d-inline-block" [(ngModel)]="desiredFolder" placeholder="Enter folder name" style="width: 280px;" />
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm">Upload</button>
+    </form>
+  </div>
+</div>
+<h3>Your Files</h3>
+<div *ngIf="!files || files.length === 0">
+  <p>No files uploaded yet.</p>
+</div>
+<div class="folder-view">
+  <h2>Files and Folders</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let file of files">
+      <i class="bi" [ngClass]="file.isDirectory ? 'bi-folder' : 'bi-file-earmark'"></i>
+      <span (click)="file.isDirectory ? openFolder(file.name) : null" style="cursor: pointer;"> {{ file.name }} </span>
+      <span class="text-muted ms-2"> Path: {{ file.webkitRelativePath }} </span>
+      <span class="float-end text-muted"> Last Modified: {{ file.lastModified | date: 'short' }} </span>
+      <span class="ms-3">
+        <button (click)="deleteFile(file.webkitRelativePath, file.name)" class="btn btn-sm btn-danger"> Delete </button>
+      </span>
+    </li>
+  </ul>
+</div> -->
+<div>
+  <h2>Upload Files</h2>
+  <div class="card mt-4 p-3">
+    <form (submit)="onUpload()" enctype="multipart/form-data" class="d-flex align-items-center gap-2">
+      <div class="form-group">
+        <label for="file" class="form-label mb-0">Files:</label>
+        <input 
+          id="file" 
+          name="file" 
+          type="file" 
+          class="form-control form-control-sm d-inline-block" 
+          (change)="onFileChange($event)" 
+          multiple 
+          style="width: 500px;" 
+        />
+      </div>
+      <div class="form-group">
+        <label for="folder" class="form-label mb-0">Folder:</label>
+        <input 
+          id="folder" 
+          name="folder" 
+          type="text" 
+          class="form-control form-control-sm d-inline-block" 
+          [(ngModel)]="desiredFolder" 
+          placeholder="Enter folder name" 
+          style="width: 280px;" 
+        />
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm">Upload</button>
+    </form>
+  </div>
+</div>
+
+<h3>Your Files</h3>
+<div *ngIf="!files || files.length === 0">
+  <p>No files uploaded yet.</p>
+</div>
+
+<div class="folder-view">
+  <h2>Files and Folders</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let file of files">
+      <i class="bi" [ngClass]="file.isDirectory ? 'bi-folder' : 'bi-file-earmark'"></i>
+      <span class="text-muted ms-2"> Path: {{ file.webkitRelativePath }} </span>
+      <span (click)="file.isDirectory ? openFolder(file.name) : null" style="cursor: pointer;">
+        {{ file.name }}
+      </span>
+      <span class="float-end text-muted"> Last Modified: {{ file.lastModified | date: 'short' }} </span>
+      <span class="ms-3">
+        <button (click)="deleteFile(file.webkitRelativePath, file.name)" class="btn btn-sm btn-danger"> Delete </button>
+      </span>
+    </li>
+  </ul>
+</div>

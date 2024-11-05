@@ -84,10 +84,10 @@ task deleteStatic(type: Delete) {
 // Task to copy Angular dist files to static folder
 task copyAngularDistToStatic(type: Copy) {
     dependsOn buildAngular1
-    from 'client/rijalclaude/dist/rijal-claude/browser'  // Adjust if your dist folder path is different
+    from 'client/rijalClaude/dist/rijal-claude/browser/browser'  // Adjust if your dist folder path is different
     into 'src/main/resources/static'
     doLast {
-        println "Angular dist files copied to src/main/resources/static."
+        println "Angular dist files copied to src/main/resources/static"
     }
 }
 

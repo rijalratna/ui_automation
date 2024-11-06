@@ -20,7 +20,15 @@ export class AppComponent {
   constructor(private appService: ApiService, private sessionService: SessionService, private router: Router) {
     this.loadUserFromSession();
   }
-
+  ngOnInit() {
+    this.appService.getUserInfo().subscribe({
+        next: (user) => {
+            this.currentUser = user; // Store user info in component
+            this.isLoggedIn = true; // Update login state
+        },
+        error: (error) => console.error('Failed to fetch user info:', error),
+    });
+}
   private loadUserFromSession() {
     const userData = this.sessionService.getUser();
     if (userData) {
@@ -31,59 +39,63 @@ export class AppComponent {
     }
   }
 
-  onLoginWithCredentials(event: Event) {
-    event.preventDefault();
-    const formData = { username: this.username, password: this.password };
+  // onLoginWithCredentials(event: Event) {
+  //   event.preventDefault();
+  //   const formData = { username: this.username, password: this.password };
 
-    this.appService.login(formData).subscribe({
-      next: (response) => {
-        console.log('Login successful:', response);
-        this.handleLoginResponse(response);
-      },
-      error: (error) => {
-        console.error('Login failed:', error);
-      },
-    });
-  }
+  //   this.appService.login(formData).subscribe({
+  //     next: (response) => {
+  //       console.log('Login successful:', response);
+  //       this.handleLoginResponse(response);
+  //     },
+  //     error: (error) => {
+  //       console.error('Login failed:', error);
+  //     },
+  //   });
+  // }
 
-  toggleLoginOptions() {
-    this.showLoginOptions = !this.showLoginOptions;
-  }
+  // toggleLoginOptions() {
+  //   this.showLoginOptions = !this.showLoginOptions;
+  // }
 
-  logout() {
-    this.sessionService.clearSession();
-    this.isLoggedIn = false;
-    this.currentUser = null;
-    this.router.navigate(['/signup']);
-  }
+  // logout() {
+  //   this.sessionService.clearSession();
+  //   this.isLoggedIn = false;
+  //   this.currentUser = null;
+  //   this.router.navigate(['/signup']);
+  // }
 
-  loginWithGoogle() {
-    this.appService.loginWithGoogle();
-    // .subscribe({
-    //   next: (response) => this.handleLoginResponse(response),
-    //   error: (error) => console.error('Google login failed:', error),
-    // });
-  }
+  // loginWithGoogle() {
+  //   this.appService.loginWithGoogle();
+  //   // .subscribe({
+  //   //   next: (response) => this.handleLoginResponse(response),
+  //   //   error: (error) => console.error('Google login failed:', error),
+  //   // });
+  // }
 
-  loginWithFacebook() {
-    this.appService.loginWithFacebook().subscribe({
-      next: (response) => this.handleLoginResponse(response),
-      error: (error) => console.error('Facebook login failed:', error),
-    });
-  }
+  // loginWithFacebook() {
+  //   this.appService.loginWithFacebook().subscribe({
+  //     next: (response) => this.handleLoginResponse(response),
+  //     error: (error) => console.error('Facebook login failed:', error),
+  //   });
+  // }
 
-  loginWithAmazon() {
-    this.appService.loginWithAmazon().subscribe({
-      next: (response) => this.handleLoginResponse(response),
-      error: (error) => console.error('Amazon login failed:', error),
-    });
-  }
+  // loginWithAmazon() {
+  //   this.appService.loginWithAmazon().subscribe({
+  //     next: (response) => this.handleLoginResponse(response),
+  //     error: (error) => console.error('Amazon login failed:', error),
+  //   });
+  // }
 
-  private handleLoginResponse(response: any) {
-    console.log('Logged in:', response.message);
-    this.isLoggedIn = true;
-    this.currentUser = { email: response.email, name: response.name };
-    this.sessionService.setUser(this.currentUser);
-    this.router.navigate(['/home']); // Navigate after successful login
+  // private handleLoginResponse(response: any) {
+  //   console.log('Logged in:', response.message);
+  //   this.isLoggedIn = true;
+  //   this.currentUser = { email: response.email, name: response.name };
+  //   this.sessionService.setUser(this.currentUser);
+  //   this.router.navigate(['/home']); // Navigate after successful login
+  // }
+  isLoginOrSignupPage(): boolean {
+    const currentRoute = this.router.url;
+    return currentRoute === '/login' || currentRoute === '/signup';
   }
 }

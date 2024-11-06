@@ -1,31 +1,40 @@
-spring:
+spring:spring:
   security:
     oauth2:
       client:
         registration:
           google:
-            client-id: 309175152276-khab09h2mp6p2unv19966qe233d2n8f2.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${google-client-id}
+            client-secret: ${google.client-secret}
             scope:
               - profile
               - email
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
             authorization-grant-type: authorization_code
           facebook:
-            client-id: 1062584818503828
-            client-secret: 79e27bd03f15d8c760efeecfb1caab5b
+            client-id: ${facebook-client-id}
+            client-secret: ${facebook.client-secret}
             scope:
               - public_profile
               - email
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
           amazon:
-            client-id: amzn1.application-oa2-client.8ac783e8facc4dd98e40992ff891a42e
-            client-secret: amzn1.oa2-cs.v1.80510dda6302672500cf473caf8f06e1f599cd2d6896fda70ea686b1fadd58b9
+            client-id: ${amazon-client-id}
+            client-secret: ${amazon.client-secret}
             scope:
               - email
               - profile
             redirect-uri: "{baseUrl}/login/oauth2/code/amazon"
             authorization-grant-type: authorization_code
+          linkedin:
+            client-id: ${linkedin-client-id}
+            client-secret: ${linkedin.client-secret}
+            scope:
+              - r_liteprofile
+              - r_emailaddress
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/linkedin"
+            client-name: LinkedIn
         provider:
           google:
             authorization-uri: https://accounts.google.com/o/oauth2/auth
@@ -42,3 +51,11 @@ spring:
             token-uri: https://graph.facebook.com/v2.8/oauth/access_token
             user-info-uri: https://graph.facebook.com/me?fields=id,name,email
             user-name-attribute: id
+          linkedin:
+            authorization-uri: https://www.linkedin.com/oauth/v2/authorization
+            token-uri: https://www.linkedin.com/oauth/v2/accessToken
+            user-info-uri: https://api.linkedin.com/v2/me
+            user-name-attribute: id
+secrets:
+  folder:
+    path: /Users/ratnarijal/secrets/rijalClaude/app

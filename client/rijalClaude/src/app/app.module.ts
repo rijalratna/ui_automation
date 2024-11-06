@@ -28,6 +28,7 @@ import { ApiService } from './app-service.service';
 import { SessionService } from './session.service';
 import { PaybillComponent } from './paybill/paybill.component';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { LoginComponent } from './login/login.component';
     HomeSecurityComponent,
     TravelPlannerComponent,
     NicheCommunityComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

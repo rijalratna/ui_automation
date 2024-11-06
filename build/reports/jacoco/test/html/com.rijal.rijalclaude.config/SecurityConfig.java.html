@@ -18,7 +18,7 @@ import org.springframework.security.web.SecurityFilterChain;
 <span class="nc" id="L18">        http.csrf(AbstractHttpConfigurer::disable)</span>
 <span class="nc" id="L19">                .authorizeHttpRequests(authorize -&gt; authorize</span>
                         // Allow access to login, signup, and oauth2 endpoints
-<span class="nc" id="L21">                        .requestMatchers(&quot;/api/login&quot;, &quot;/api/signup&quot;, &quot;/api/signup/**&quot;, &quot;/oauth2/**&quot;).permitAll() // Include other public paths</span>
+<span class="nc" id="L21">                        .requestMatchers(&quot;/api/login&quot;, &quot;/api/signup&quot;, &quot;/api/signup/**&quot;, &quot;/oauth2/**&quot;,&quot;/#/login&quot;,&quot;/#/signup&quot;,&quot;/#/home&quot;).permitAll() // Include other public paths</span>
 <span class="nc" id="L22">                        .anyRequest().authenticated() // Require authentication for all other requests</span>
                 )
 <span class="nc" id="L24">                .formLogin(form -&gt; form</span>
@@ -27,8 +27,8 @@ import org.springframework.security.web.SecurityFilterChain;
 <span class="nc" id="L27">                        .failureUrl(&quot;/#/signup?error=true&quot;) // Redirect to login with error</span>
                 )
 <span class="nc" id="L29">                .oauth2Login(oauth2 -&gt; oauth2</span>
-//                        .loginPage(&quot;/login&quot;) // Ensure this matches your Angular routing
-<span class="nc" id="L31">                        .defaultSuccessUrl(&quot;/home&quot;, true) // Redirect to home after successful login</span>
+//                        .loginPage(&quot;/#/login&quot;) // Ensure this matches your Angular routing
+<span class="nc" id="L31">                        .defaultSuccessUrl(&quot;/#/home&quot;, true) // Redirect to home after successful login</span>
 <span class="nc" id="L32">                        .failureUrl(&quot;/signup?error=true&quot;) // Redirect on failure</span>
 <span class="nc" id="L33">                        .authorizationEndpoint(authorization -&gt; authorization</span>
 <span class="nc" id="L34">                                .baseUri(&quot;/oauth2/authorization&quot;) // Set base URI for OAuth2 authorization</span>

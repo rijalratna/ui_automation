@@ -9,7 +9,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -80,6 +82,13 @@ public class SignupController {
     @PostMapping("/signup/amazon")
     public ResponseEntity<?> signupWithAmazon(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) {
         return handleSocialLogin(authentication);
+    }
+
+    @GetMapping("/login/oauth2/code/linkedin")
+    public String linkedInLoginSuccess(OAuth2User oAuth2User, Model model) {
+        // Handle the LinkedIn user info and create your user session here
+        model.addAttribute("user", oAuth2User.getAttributes());
+        return "home";  // Redirect to home page or any other page
     }
     @GetMapping("/user/info")
     public ResponseEntity<?> getUserInfo(HttpSession session) {

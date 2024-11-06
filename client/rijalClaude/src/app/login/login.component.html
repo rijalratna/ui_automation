@@ -1,1 +1,33 @@
-<p>login works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/home">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto d-flex align-items-center">
+        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/claude">Claude</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/automation">Automation</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+          <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+            <li><a class="dropdown-item" routerLink="/feature/personal-finance-manager">Personal Finance Manager</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/task-manager">Task Manager</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/health-fitness-tracker">Health & Fitness Tracker</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/smart-home-management">Smart Home Management</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/e-learning">E-Learning Platform</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/social-engagement">Social Engagement</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/file-management">File Management</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/home-security">Home Security</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/travel-planner">Travel Planner</a></li>
+            <li><a class="dropdown-item" routerLink="/feature/niche-community">Niche Community</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<form (submit)="onLoginWithCredentials($event)" class="d-flex">
+    <input type="text" placeholder="Username" required [(ngModel)]="username" name="username" class="form-control me-2" style="width: auto;" />
+    <input type="password" placeholder="Password" required [(ngModel)]="password" name="password" class="form-control me-2" style="width: auto;" />
+    <button type="submit" class="btn btn-success">Login</button>
+  </form>

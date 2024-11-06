@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="675bce31-8882-49fa-9bf4-38b035a20b37" name="Changes" comment="first login success but with failure of logout button">
+    <list default="true" id="675bce31-8882-49fa-9bf4-38b035a20b37" name="Changes" comment="login good but trying different approach">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/config/CredentialConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -15,37 +16,37 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/controller/SignupController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/controller/AngularController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/rijal/rijalclaude/controller/AngularController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0-plain.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0-plain.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/rijalclaude-1.0.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/SecurityConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/SecurityConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/SecurityConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/SecurityConfig.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.config/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/SignupController.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/SignupController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/SignupController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/SignupController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/AngularController.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.controller/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/LoginService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/com.rijal.rijalclaude.service/LoginService.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/jacocoTestReport.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/main-MVLQSMRT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/main-5HGMI7MU.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app-service.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/claude/claude.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/claude/claude.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/session.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/session.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rijalClaude/src/app/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/rijalClaude/src/app/signup/signup.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/controller/AngularController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/controller/AngularController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/controller/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rijal/rijalclaude/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main-MVLQSMRT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main-5HGMI7MU.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,23 +98,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ratnarijal/Desktop/Project/rijalclaude/src/main/resources/static&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/ratnarijal/Desktop/Project/rijalclaude",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.rijal.rijalclaude.domain" />
       <recent name="com.rijal.rijalclaude.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -264,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730775803312</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="login good but trying different approach">
+      <option name="closed" value="true" />
+      <created>1730780880052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730780880052</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +292,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="second round" />
     <MESSAGE value="first login success but with failure of logout button" />
-    <option name="LAST_COMMIT_MESSAGE" value="first login success but with failure of logout button" />
+    <MESSAGE value="login good but trying different approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="login good but trying different approach" />
   </component>
 </project>
